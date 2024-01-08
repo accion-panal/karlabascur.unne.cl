@@ -2,7 +2,7 @@ import React, { Fragment } from 'react';
 // import About from './components/About';
 import Section from '../../Section/Section';
 import MeetingForm from '../../../components/Form/MeetingForm';
-import aboutMeImg from '../../../assets/img/me/person_4-min.jpg'
+import aboutMeImg from '../../../assets/img/me/me_bascur.jpg'
 
 // import ContactUs from './components/ContactUs';
 // import Alliances from './components/Alliances';
@@ -26,7 +26,7 @@ const AboutComponent = () => {
           <img
             src={aboutMeImg}
             alt="about-img"
-            className="rounded-full h-[200px] w-[200px] mt-10 mx-14 md:mx-2 md:w-[300px] md:h-[300px] xl:w-[360px] xl:h-[360px] md:mt-24 xl:mt-20 xl:mx-2"
+            className="object-cover rounded-full h-[200px] w-[200px] mt-10 mx-14 md:mx-2 md:w-[300px] md:h-[300px] xl:w-[360px] xl:h-[360px] md:mt-24 xl:mt-20 xl:mx-2"
           />
         </div>
         <div className="col-span-2 xl:col-span-1 ">

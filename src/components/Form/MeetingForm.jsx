@@ -26,18 +26,6 @@ const MeetingForm = ({ title, subtitle, }) => {
     meetingDate: 'No indicada',
   });
 
-  // Variables Date para poder concatenar con MeetingDate
-  // const [meetingDate, setMeetingDate] = useState(new Date());
-  // const [meetingTime, setMeetingTime] = useState('');
-
-  // const handleDateChange = (event) => {
-  //   setMeetingDate(event.target.value);
-  // };
-
-  // const handleTimeChange = (event) => {
-  //   setMeetingTime(event.target.value);
-  // };
-
   const [errorMsg, setErrorMsg] = useState({
     allFieldRequierd: '',
     serverEmailError: '',
@@ -82,19 +70,6 @@ const MeetingForm = ({ title, subtitle, }) => {
     });
   };
 
-  // const handleAction = (ev) => {
-  //   setFormData({
-  //     ...formData,
-  //     action: ev.target.value,
-  //   });
-  // };
-
-  // const handleTermsAndConditions = (ev) => {
-  //   setFormData({
-  //     ...formData,
-  //     termsAndConditions: !formData.termsAndConditions,
-  //   });
-  // };
 
   const resetForm = () => {
     setFormData({
@@ -149,8 +124,7 @@ const MeetingForm = ({ title, subtitle, }) => {
     // const parsedDate = parseRealtorDate(formattedDate);
     // const updatedFormData = { ...formData, meetingDate: parsedDate };
 
-    console.log(
-      formData)
+
     try {
       if (
         Object.values(formData).includes('') ||
@@ -163,21 +137,6 @@ const MeetingForm = ({ title, subtitle, }) => {
         return;
       }
 
-      // if (!meetingDate || !meetingTime) {
-      //   setErrorMsg({
-      //     allFieldRequierd:
-      //       'Por favor debes definir una fecha y hora de encuentro',
-      //   });
-      //   return;
-      // }
-
-      // if (!formData.meetingDate) {
-      //   setErrorMsg({
-      //     allFieldRequierd:
-      //       'Por favor debes definir una fecha y hora de encuentro',
-      //   });
-      //   return;
-      // }
 
       setLoading(true);
       const response = await ContactFormServices.sendContactMeetingForm(

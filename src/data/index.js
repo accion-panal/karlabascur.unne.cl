@@ -1,7 +1,7 @@
 import Slide1 from '../assets/img/carousel/slide1.jpg';
 import Slide4 from '../assets/img/carousel/slide4.jpg';
 
-import AboutMeImg from '../assets/img/me/person_4-min.jpg'
+import AboutMeImg from '../assets/img/me/me_bascur.jpg'
 
 /** Main Carousel Data */
 export const mainCarouselData = [
